@@ -1,0 +1,1055 @@
+.App {
+  text-align: center;
+  background-color: var(--tg-theme-bg-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--tg-theme-text-color);
+}
+
+.App-header {
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: var(--tg-theme-link-color);
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--tg-theme-secondary-bg-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: bold;
+  color: var(--tg-theme-text-color);
+}
+
+.user-status {
+  font-size: 12px;
+  color: var(--tg-theme-hint-color);
+}
+
+.header-buttons {
+  display: flex;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* Добавьте эти стили в конец файла */
+
+.courses-page {
+  padding: 20px;
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 8px;
+}
+
+.course-item {
+  border: 1px solid var(--tg-theme-hint-color);
+  border-radius: 8px;
+  padding: 15px;
+  background-color: var(--tg-theme-secondary-bg-color);
+  margin-bottom: 15px; /* Добавляем отступ между карточками курсов */
+}
+
+.course-item h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--tg-theme-text-color);
+}
+
+.course-item p {
+  margin-bottom: 15px;
+  color: var(--tg-theme-hint-color);
+}
+
+.course-item .button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.course-item .button:hover {
+  background-color: var(--tg-theme-secondary-bg-color);
+  color: var(--tg-theme-button-color);
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.main-menu a {
+  text-decoration: none;
+}
+
+.main-menu button {
+  width: 100%;
+}
+
+.header-buttons {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--tg-theme-bg-color);
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-buttons button {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/* Обновите существующие стили для header-buttons */
+
+/* Добавьте новые стили для icon-button */
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.icon-button svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--tg-theme-button-color);
+}
+
+.icon-button:hover svg {
+  fill: var(--tg-theme-button-text-color);
+}
+
+/* Добавьте эти стили в конец файла */
+
+.ai-assistant-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+}
+
+.chat-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.message {
+  max-width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.message.user {
+  align-self: flex-end;
+  background-color: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
+}
+
+.message.ai {
+  align-self: flex-start;
+  background-color: var(--tg-theme-secondary-bg-color);
+  color: var(--tg-theme-text-color);
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--tg-theme-secondary-bg-color);
+  border-radius: 8px;
+}
+
+.input-container textarea {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid var(--tg-theme-hint-color);
+  border-radius: 5px;
+  background-color: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color);
+  resize: none;
+  height: 40px;
+  min-height: 40px;
+  overflow-y: auto;
+}
+
+.input-container button {
+  white-space: nowrap;
+  height: 40px;
+  padding: 0 20px;
+}
+
+/* Добавьте эти стили в конец файла */
+
+.my-learning-page {
+  padding: 20px;
+}
+
+.my-learning-page h1 {
+  color: var(--tg-theme-text-color);
+  margin-bottom: 20px;
+}
+
+.my-learning-page p {
+  color: var(--tg-theme-text-color);
+  margin-bottom: 20px;
+}
+
+.course-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: var(--tg-theme-secondary-bg-color);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-button {
+  margin-top: 15px;
+  align-self: center;
+  width: 100%;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+}
+
+.progress-bar {
+  flex-grow: 1;
+  height: 8px; /* Уменьшаем высоту для более тонкой полоски */
+  background-color: var(--tg-theme-hint-color); /* Цвет фона полоски */
+  border-radius: 4px; /* Скругляем углы */
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--tg-theme-button-color); /* Цвет заполнения */
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 14px;
+  color: var(--tg-theme-hint-color);
+  min-width: 40px; /* Фиксированная ширина для выравнивания */
+  text-align: right;
+}
+
+/* Добавьте эти стили в конец файла */
+
+.course-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.course-title {
+  color: var(--tg-theme-text-color);
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.course-info {
+  background-color: var(--tg-theme-secondary-bg-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.course-description {
+  color: var(--tg-theme-text-color);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.course-details {
+  color: var(--tg-theme-hint-color);
+  font-size: 14px;
+}
+
+.course-details p {
+  margin: 5px 0;
+}
+
+.course-lessons {
+  background-color: var(--tg-theme-secondary-bg-color);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.course-lessons h2 {
+  color: var(--tg-theme-text-color);
+  margin-bottom: 15px;
+}
+
+/* Обновите стили для .lesson-list */
+.lesson-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Добавляем отступ между карточками уроков */
+}
+
+/* Обновите стили для .lesson-item */
+.lesson-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: var(--tg-theme-bg-color);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lesson-item:hover {
+  background-color: var(--tg-theme-secondary-bg-color);
+}
+
+.lesson-item.completed {
+  background-color: #29bf59;
+  color: #fff;
+}
+
+.lesson-info {
+  display: flex;
+  align-items: center;
+}
+
+.lesson-number {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.lesson-title {
+  flex-grow: 1;
+}
+
+.lesson-completed {
+  margin-left: 10px;
+  color: var(--tg-theme-button-color);
+  font-weight: bold;
+}
+
+.lesson-points {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 24px;
+  background-color: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Добавьте новый стиль для .course-lessons */
+.course-lessons {
+  background-color: var(--tg-theme-secondary-bg-color);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.lesson-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.lesson-page h1 {
+  color: var(--tg-theme-text-color);
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.lesson-number {
+  font-weight: bold;
+  color: var(--tg-theme-hint-color);
+}
+
+.lesson-content {
+  background-color: var(--tg-theme-secondary-bg-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.lesson-content h2 {
+  color: var(--tg-theme-text-color);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.answer-section {
+  background-color: var(--tg-theme-secondary-bg-color);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.answer-section h2 {
+  color: var(--tg-theme-text-color);
+  margin-bottom: 10px;
+}
+
+.answer-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--tg-theme-hint-color);
+  border-radius: 5px;
+  background-color: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color);
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.answer-section button {
+  display: block;
+  width: 100%;
+}
+
+/* Добавьте эти стили в конец файла */
+
+.test-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.test-page h1 {
+  color: var(--tg-theme-text-color);
+  margin-bottom: 20px;
+}
+
+.question-block {
+  background-color: var(--tg-theme-secondary-bg-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.question-block h2 {
+  color: var(--tg-theme-text-color);
+  margin-bottom: 10px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.option input[type="radio"] {
+  cursor: pointer;
+}
+
+.test-section {
+  margin-top: 20px;
+}
+
+/* Добавьте эти стили в конец файла */
+
+.test-result-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.test-result-page h1 {
+  color: var(--tg-theme-text-color);
+  margin-bottom: 20px;
+}
+
+.result-summary {
+  background-color: var(--tg-theme-secondary-bg-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.result-summary p {
+  margin-bottom: 10px;
+  color: var(--tg-theme-text-color);
+}
+
+/* Добавьте эти стили в конец файла */
+
+.ai-assistant-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  background-color: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
+  border: none;
+  cursor: pointer;
+}
+
+.ai-assistant-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.ai-assistant-modal-content {
+  background-color: var(--tg-theme-bg-color);
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-modal-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: var(--tg-theme-text-color);
+  cursor: pointer;
+}
+
+/* Обновите стили для .ai-assistant-page */
+.ai-assistant-page {
+  height: calc(100% - 40px); /* Учитываем высоту кнопки закрытия */
+}
+
+.chat-container {
+  height: calc(100% - 60px); /* Учитываем высоту поля ввода */
+}
+
+.toggle-main-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-main-button:hover {
+  background-color: var(--tg-theme-secondary-bg-color);
+}
+
+.toggle-main-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.square-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Увеличиваем отступ между кнопками */
+  width: 100%;
+}
+
+.square-button {
+  flex: 1;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Изменено с center на flex-start */
+  justify-content: space-between; /* Изменено с flex-end на space-between */
+  text-align: left; /* Изменено с center на left */
+  font-size: 16px;
+  line-height: 1.2;
+  padding: 30px 20px; /* Увеличиваем внутренние отступы */
+  position: relative;
+}
+
+.square-button h3 {
+  margin-top: 0; /* Убираем автоматический отступ сверху */
+  margin-bottom: 10px; /* Добавляем небольшой отступ снизу */
+  font-size: 18px;
+  align-self: flex-start; /* Выравниваем текст по левому краю */
+}
+
+.course-counter {
+  position: absolute;
+  top: 20px; /* Увеличиваем отступ сверху */
+  left: 20px; /* Увеличиваем отступ слева */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--tg-theme-button-text-color);
+}
+
+.course-counter-number {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 5px; /* Добавляем отступ между числом и текстом */
+}
+
+.course-counter-text {
+  font-size: 16px;
+  margin-left: 2px; /* Добавляем небольшой отступ слева для текста */
+}
+
+.home-button h3 {
+  margin-top: auto;
+  font-size: 18px; /* Увеличиваем размер шрифта для заголовка */
+}
+
+.home-button:not(.square-button)::before {
+  content: attr(data-emoji);
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* Обновите стили для .home-button */
+.home-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  text-align: left;
+  background-color: var(--tg-theme-button-color);
+  color: #fff; /* Изменено на белый цвет */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: left;
+}
+
+.home-button:hover {
+  background-color: var(--tg-theme-secondary-bg-color);
+  color: #fff; /* Оставляем белый цвет при наведении */
+}
+
+.home-button::before {
+  content: attr(data-emoji);
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.home-button.my-learning {
+  background-color: #437857;
+  background-image: url("./img/PC.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.home-button.all-courses {
+  background-color: #29bf59;
+  background-image: url("./img/world-map.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.home-button.rewards {
+  background-color: #5db87b;
+  background-image: url("./img/Frame-12.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+.home-button.leaderboard {
+  background-color: #75d56a;
+  background-image: url("./img/Frame-13.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+.home-button.profile {
+  background-color: #29bf59;
+  background-image: url("./img/Frame-14.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.rewards-description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.32px;
+  text-align: left;
+  width: 60%;
+  color: var(--tg-theme-hint-color);
+}
+
+.profile-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.user-info {
+  text-align: center;
+}
+
+.account-info {
+  background-color: var(--tg-theme-secondary-bg-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.totcoins {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--tg-theme-button-color);
+}
+
+.purchased-courses h2 {
+  margin-bottom: 20px;
+}
+
+.course-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.course-item {
+  background-color: var(--tg-theme-secondary-bg-color);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-info {
+  flex-grow: 1;
+  margin-right: 15px;
+}
+
+.course-info h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  background-color: var(--tg-theme-bg-color);
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--tg-theme-button-color);
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 14px;
+  color: var(--tg-theme-hint-color);
+}
+
+/* Добавьте эти стили в конец файла */
+
+.leaderboard-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.leaderboard-page h1 {
+  color: var(--tg-theme-text-color);
+  margin-bottom: 20px;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--tg-theme-secondary-bg-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--tg-theme-hint-color);
+}
+
+.leaderboard-table th {
+  background-color: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
+  font-weight: bold;
+}
+
+.leaderboard-table tr:last-child td {
+  border-bottom: none;
+}
+
+.leaderboard-table .current-user {
+  background-color: var(--tg-theme-bg-color);
+  font-weight: bold;
+}
+
+/* Добавьте эти стили в конец файла */
+
+.rewards-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.rewards-page h1 {
+  color: var(--tg-theme-text-color);
+  margin-bottom: 20px;
+}
+
+.rewards-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.reward-card {
+  background-color: var(--tg-theme-secondary-bg-color);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reward-card h2 {
+  color: var(--tg-theme-text-color);
+  margin-bottom: 10px;
+}
+
+.reward-card p {
+  color: var(--tg-theme-hint-color);
+  margin-bottom: 10px;
+}
+
+.reward-card .price {
+  font-weight: bold;
+  color: var(--tg-theme-text-color);
+}
+
+.reward-card .availability {
+  margin-bottom: 15px;
+}
+
+.reward-card .availability.available {
+  color: green;
+}
+
+.reward-card .availability.unavailable {
+  color: red;
+}
+
+.reward-card button {
+  margin-top: auto;
+}
+
+/* Добавьте новые стили для header */
+header {
+  background-color: var(--tg-theme-secondary-bg-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Добавьте новые стили для user-coins */
+.user-coins {
+  display: flex;
+  align-items: center;
+}
+
+.coin-icon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.coin-amount {
+  font-weight: bold;
+  color: var(--tg-theme-text-color);
+}
+
+/* Добавьте эти стили в конец файла или обновите существующие */
+
+.info-block {
+  background-color: var(--tg-theme-secondary-bg-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.info-block h2 {
+  color: var(--tg-theme-text-color);
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.info-block p {
+  color: var(--tg-theme-text-color);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Добавьте эти стили в конец файла или обновите существующие */
+
+.course-progress {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  flex-grow: 1;
+  height: 8px; /* Уменьшаем высоту для более тонкой полоски */
+  background-color: var(--tg-theme-hint-color); /* Цвет фона полоски */
+  border-radius: 4px; /* Скругляем углы */
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--tg-theme-button-color); /* Цвет заполнения */
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 14px;
+  color: var(--tg-theme-hint-color);
+  min-width: 40px; /* Фиксированная ширина для выравнивания */
+  text-align: right;
+}
+
+/* Обновите стили для конкретных кнопок */
+.home-button.my-learning,
+.home-button.all-courses,
+.home-button.rewards,
+.home-button.leaderboard,
+.home-button.profile {
+  color: #fff;
+}
+
+/* Обновите стили для .course-counter и .rewards-description */
+.course-counter,
+.rewards-description {
+  color: #fff;
+}
+
+/* Если нужно, обновите стили для h3 внутри кнопок */
+.home-button h3 {
+  color: #fff;
+}
